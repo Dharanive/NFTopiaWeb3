@@ -21,7 +21,7 @@ export default function NFTClaimLandingPage() {
   const contract = getContract({
     client: client,
     chain: sepolia,
-    address: process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS as string
+    address:"0x4121A401A87b4B630006b52CECe40cf2271aa368"
   })
 
   const {data: contractMetadata } = useReadContract(
